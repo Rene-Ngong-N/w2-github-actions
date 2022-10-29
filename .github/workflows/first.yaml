@@ -13,6 +13,7 @@ jobs:
 
   job2:
     runs-on: macos-latest
+    needs: [job1]
     steps:
       - name: printing the calendar
         run: cal 
@@ -21,7 +22,7 @@ jobs:
 
   job3:
     runs-on: windows-latest 
+    needs: [job1, job2]
     steps:
       - name: printing date 
         run: Get-date 
-        
