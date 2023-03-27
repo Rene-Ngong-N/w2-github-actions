@@ -11,14 +11,14 @@ jobs:
       - name: printing the date
         run: date 
 
-  job2:
-    runs-on: macos-latest
-    needs: [job1]
-    steps:
-      - name: printing the calendar
-        run: cal 
-      - name: printing the date 
-        run: date 
+  # job2:
+  #   runs-on: macos-latest
+  #   needs: [job1]
+  #   steps:
+  #     - name: printing the calendar
+  #       run: cal 
+  #     - name: printing the date 
+  #       run: date 
 
   # job3:
   #   runs-on: windows-latest 
