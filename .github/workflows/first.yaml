@@ -20,10 +20,10 @@ jobs:
       - name: printing the date 
         run: date 
 
-  job3:
-    runs-on: windows-latest 
-    needs: [job1, job2]
-    steps:
-      - name: printing date 
-        run: Get-date 
+  # job3:
+  #   runs-on: windows-latest 
+  #   needs: [job1, job2]
+  #   steps:
+  #     - name: printing date 
+  #       run: Get-date 
     
