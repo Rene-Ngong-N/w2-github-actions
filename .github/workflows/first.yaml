@@ -11,6 +11,16 @@ jobs:
       - name: print date
         run: date 
 
+
+  job3:
+    runs-on: windows-latest 
+    needs: [job1]
+    steps:
+      - name: printing Calendar on windows
+        run: powershell -command "Get-Date UFormat '%B %Y' | Out-Host; cal.exe"
+  
+
+  
   # job2:
   #   runs-on: macos-latest
   #   needs: [job1]
@@ -19,11 +29,3 @@ jobs:
   #       run: cal 
   #     - name: printing the date 
   #       run: date 
-
-  # job3:
-  #   runs-on: windows-latest 
-  #   needs: [job1, job2]
-  #   steps:
-  #     - name: printing date 
-  #       run: Get-date 
-    
