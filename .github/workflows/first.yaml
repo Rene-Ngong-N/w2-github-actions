@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: printing the calendar and time
+        run: cal
+      - name: printing the date
         run: date 
 
   # job2:
